@@ -1,0 +1,5 @@
+
+board.getTile(BoardUtils.leftAdjacentTile(candidateDestinationCoordinate)).isTileOccupied() ||
+                            board.getTile(BoardUtils.rightAdjacentTile(candidateDestinationCoordinate)).isTileOccupied() ||
+                            board.getTile(BoardUtils.aboveAdjacentTile(candidateDestinationCoordinate)).isTileOccupied() ||
+                            board.getTile(BoardUtils.belowAdjacentTile(candidateDestinationCoordinate)).isTileOccupied())
