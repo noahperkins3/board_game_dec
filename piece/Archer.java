@@ -31,7 +31,7 @@ public class Archer extends Piece {
     }
 
     public int attackPower() {
-        int result = 0;
+        int result = 2;
         for (Card card : this.abilities) {
             if (card.getSuit().equals("spades")) {
                 result += card.getFaceValue() * 2;
