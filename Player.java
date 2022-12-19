@@ -11,7 +11,7 @@ public class Player { private static final int MAX_POINTS = 50;
     private final Set<Card> allCards;
     private int pointsSpent = 0;
     private boolean noMorePoints = false;
-    private int playerNum;
+    private final int playerNum;
 
     public Player(int playerNum) {
         this.playerNum = playerNum;
