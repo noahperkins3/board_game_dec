@@ -31,7 +31,7 @@ public class Archer extends Piece {
     }
 
     public int attackPower() {
-        int result = 2;
+        int result = 0;
         for (Card card : this.abilities) {
             if (card.getSuit().equals("spades")) {
                 result += card.getFaceValue() * 2;
@@ -42,7 +42,6 @@ public class Archer extends Piece {
         return result;
     }
 
-    //TODO wrong defense num
     @Override
     public int defendPower() {
         int result = 0;
